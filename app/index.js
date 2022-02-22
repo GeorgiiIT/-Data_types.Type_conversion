@@ -19,6 +19,7 @@ let kiwiCountryPercent = 10;
 let applePercentTotal = applePrice * appleCount * appleSalePercent /100; 
 let applePriceCount = applePrice * appleCount - applePercentTotal;
 
+
 let orangePercentTotal = orangePrice * orangeCount * orangeSalePercent /100;
 let orangePriceCount = orangePrice * orangeCount - orangePercentTotal;
 
@@ -66,13 +67,14 @@ document.write (`<div class="content">
 	</div>
 	<div class="content__table-product">
 		<h2 class="product-heading">Price</h2>
-		<p class="product-info">$${applePriceCount}</p>
-		<p class="product-info">$${orangePriceCount}</p>
-		<p class="product-info">$${kiwiPriceCount}</p>
+		<p class="product-info">$${applePriceCount.toFixed(2)}</p>
+		<p class="product-info">$${orangePriceCount.toFixed(2)}</p>
+		<p class="product-info">$${kiwiPriceCount.toFixed(2)}</p>
 	</div>
 </div>
 <div class="content__finalsum">
-	<h2 class="content__finalsum-final">Final sum: $${finalSum}</h2>
+	<h2 class="content__finalsum-final">Final sum: $${finalSum.toFixed(2)}</h2>
 </div>
 </div>`
 );
+
