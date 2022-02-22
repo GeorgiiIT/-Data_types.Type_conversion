@@ -16,21 +16,21 @@ let kiwiPrice = 15;
 let kiwiCount = 10;
 let kiwiCountryPercent = 10;
 
-let applePercentTotal = applePrice * appleCount * appleSalePercent /100; 
+let applePercentTotal = applePrice * appleCount * appleSalePercent / 100;
 let applePriceCount = applePrice * appleCount - applePercentTotal;
 
 
-let orangePercentTotal = orangePrice * orangeCount * orangeSalePercent /100;
+let orangePercentTotal = orangePrice * orangeCount * orangeSalePercent / 100;
 let orangePriceCount = orangePrice * orangeCount - orangePercentTotal;
 
 
 let kiwiPercentTotal;
-let kiwiPriceCount = (kiwiPrice + kiwiPrice * kiwiCountryPercent /100) * kiwiCount;
+let kiwiPriceCount = (kiwiPrice + kiwiPrice * kiwiCountryPercent / 100) * kiwiCount;
 
 let finalSum = applePriceCount + orangePriceCount + kiwiPriceCount;
 
 
-document.write (`<div class="content">
+document.write(`<div class="content">
 <div class="content__heading">
 	<h1 class="content__heading-text">${captionString.toUpperCase().replace(`≠`, `-`)}</h1>
 </div>
@@ -77,4 +77,5 @@ document.write (`<div class="content">
 </div>
 </div>`
 );
+
 
